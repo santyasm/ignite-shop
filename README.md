@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Ignite Shop
 
-## Getting Started
+Projeto desenvolvido durante a **Maratona Ignite da Rocketseat** com o objetivo de praticar conceitos de **Next.js** e integração com **Stripe**.  
+É uma aplicação de e-commerce simples, com listagem de produtos e fluxo de checkout integrado.
 
-First, run the development server:
+## 🚀 Funcionalidades
 
+- Listagem de produtos cadastrados no Stripe
+- Carrossel responsivo de produtos (com [Keen Slider](https://keen-slider.io/))
+- Página de detalhes de cada produto
+- Integração com Stripe Checkout para realizar a compra
+- Geração estática (SSG) com revalidação incremental
+- Estilização responsiva com [Stitches](https://stitches.dev/)
+
+## 🖼️ Screenshots
+
+### Página Inicial
+<img src="./src//assets/screenshots/home.png" width="500" />
+<img src="./src//assets/screenshots/mobile-home.png" width="200" />
+
+### Página de Produto
+<img src="./src//assets/screenshots/product.png" width="500" />
+<img src="./src//assets/screenshots/mobile-product.png" width="200" />
+
+> As imagens acima são exemplos de como o projeto está renderizando.
+
+## 🛠️ Tecnologias utilizadas
+
+- [Next.js](https://nextjs.org/) — Framework React para produção
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Stripe](https://stripe.com/) — API de pagamentos
+- [Axios](https://axios-http.com/) — Requisições HTTP
+- [Keen Slider](https://keen-slider.io/) — Carrossel responsivo
+- [Stitches](https://stitches.dev/) — CSS-in-JS moderno
+
+## 📦 Como executar localmente
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/santyasm/ignite-shop.git
+cd ignite-shop
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+#ou
+yarn install
+````
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configure as variáveis de ambiente no arquivo .env.local:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+STRIPE_API_KEY=sk_test_xxxxxxxxxxxxxxxxx
+NEXT_URL=http://localhost:3000
+```
 
-## Learn More
+4. Rode o projeto em modo desenvolvimento:
+```bash
+npm run dev 
+#ou
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feito com 💜 por Yasmin durante a Maratona Ignite
