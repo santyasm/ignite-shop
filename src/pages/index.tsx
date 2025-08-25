@@ -25,6 +25,14 @@ export default function Home({ products }: HomeProps) {
       perView: 3,
       spacing: 48,
     },
+    breakpoints: {
+      "(max-width: 1024px)": {
+        slides: {
+          perView: 1.5,
+          spacing: 24,
+        },
+      },
+    },
   });
 
   return (

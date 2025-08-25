@@ -10,6 +10,11 @@ export const {
   theme,
   createTheme,
 } = createStitches({
+  media: {
+    sm: "(max-width: 640px)",
+    md: "(max-width: 768px)",
+    lg: "(max-width: 1024px)",
+  },
   theme: {
     colors: {
       rocketseat: "#8257e6",

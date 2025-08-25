@@ -8,6 +8,12 @@ export const ProductContainer = styled("main", {
 
   maxWidth: 1180,
   margin: "0 auto",
+
+  padding: "0 2rem",
+
+  "@sm": {
+    gridTemplateColumns: "1fr",
+  },
 });
 
 export const ImageContainer = styled("div", {

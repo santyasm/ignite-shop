@@ -6,6 +6,10 @@ export const HomeContainer = styled("main", {
   maxWidth: "calc(100vw - (100vw - 1180px) / 2)",
   marginLeft: "auto",
   minHeight: 656,
+
+  "@md": {
+    padding: "0 2rem",
+  }
 });
 
 export const Product = styled("div", {
@@ -21,6 +25,8 @@ export const Product = styled("div", {
 
   img: {
     objectFit: "cover",
+    width: "100%",
+    height: "auto",
   },
 
   footer: {
@@ -55,6 +61,14 @@ export const Product = styled("div", {
     footer: {
       transform: "translateY(0%)",
       opacity: 1,
+    },
+
+    "@sm": {
+      footer: {
+        padding: "0.75rem",
+        strong: { fontSize: "$sm" },
+        span: { fontSize: "$sm" },
+      },
     },
   },
 });
